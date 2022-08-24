@@ -1,0 +1,178 @@
+#offers {
+  background-color: white;
+  display: flex;
+}
+
+.card-wrapper {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.card {
+  background-color: var(--primary);
+  color: white;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.gold {
+  order: 1;
+}
+
+.silver {
+  order: 2;
+}
+
+.bronze {
+  order: 3;
+}
+
+.label {
+  height: 100%;
+  width: 20%;
+}
+
+.bronze .label {
+  background: linear-gradient(to bottom, #dca570, white);
+}
+
+.silver .label {
+  background: linear-gradient(to bottom, #e5e5e5, white);
+}
+
+.gold .label {
+  background: linear-gradient(to bottom, #ffdc73, white);
+}
+
+.card h2 {
+  font-size: 18px;
+  margin-bottom: -8px;
+}
+
+.card h3 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.card .text {
+  padding: 75px 15px;
+  font-size: 16px;
+}
+
+.card .text ul {
+  gap: 8px;
+}
+
+.gold h2 {
+  font-size: 18px;
+  margin-bottom: -8px;
+}
+
+.gold h3 {
+  font-size: 42px;
+}
+
+.gold .text {
+  font-size: 18px;
+}
+
+
+/* Responsive Styles */
+
+@media screen and (min-width: 992px) {
+  .card-wrapper {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .card {
+    height: auto;
+    width: 270px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .gold {
+    width: 320px;
+    order: 2;
+  }
+
+  .silver {
+    order: 1;
+  }
+
+  .bronze {
+    order: 3;
+  }
+
+  .label {
+    height: 60px;
+    width: 100%;
+  }
+
+  .bronze .label {
+    background: linear-gradient(to right, #dca570, white);
+  }
+
+  .silver .label {
+    background: linear-gradient(to right, #e5e5e5, white);
+  }
+
+  .gold .label {
+    background: linear-gradient(to right, #ffdc73, white);
+  }
+
+  .card h2 {
+    font-size: 15px;
+    margin-bottom: -5px;
+    font-weight: 600;
+  }
+
+  .card h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .gold h2 {
+    font-size: 18px;
+    margin-bottom: -8px;
+  }
+
+  .gold h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .card .text {
+    padding: 70px 10px;
+    font-size: 15px;
+  }
+
+  .gold .text {
+    padding: 75px 15px;
+    font-size: 18px;
+  }
+
+  .card .text ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .gold .text ul {
+    gap: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-wrapper {
+    gap: 30px;
+  }
+}

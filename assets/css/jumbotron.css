@@ -1,0 +1,152 @@
+.jumbotron {
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 15px 25px 50px 25px;
+}
+
+.jumbotron .content {
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 30px 30px 50px 30px;
+  gap: 30px;
+}
+
+.jumbotron img {
+  width: 250px;
+}
+
+.jumbotron .text {
+  color: white;
+  text-align: center;
+}
+
+.jumbotron .text h1 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.jumbotron .text p {
+  font-size: 16px;
+  margin-top: 15px
+}
+
+.arrow {
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+  position: absolute;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  bottom: 0;
+  transform: translate(0, 30px);
+}
+
+.arrow img {
+  margin: auto;
+}
+
+
+/* Responsive Styles */
+
+@media screen and (min-width: 600px) {
+  .jumbotron img {
+    width: 300px;
+  }
+
+  .jumbotron .text h1 {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .jumbotron .text p {
+    font-size: 18px;
+    margin-top: 18px
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    margin: 20px 30px 100px 30px;
+  }
+
+  .jumbotron .content {
+    padding: 40px 40px 50px 40px;
+    gap: 25px;
+    flex-direction: row;
+  }
+
+  .jumbotron img {
+    width: 320px;
+  }
+
+  .jumbotron .text h1 {
+    font-size: 35px;
+    line-height: 35px;
+    text-align: left;
+  }
+
+  .jumbotron .text p {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .jumbotron {
+    margin: 20px 50px 100px 50px;
+  }
+
+  .jumbotron .content {
+    padding: 50px;
+    gap: 30px;
+    flex-direction: row;
+  }
+
+  .jumbotron img {
+    width: 350px;
+  }
+
+  .jumbotron .text h1 {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .jumbotron .text p {
+    font-size: 18px;
+  }
+
+  .arrow {
+    width: 70px;
+    height: 70px;
+    transform: translate(0, 35px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .jumbotron {
+    margin: 20px 130px 100px 130px;
+  }
+
+  .jumbotron .content {
+    padding: 60px;
+    gap: 40px;
+  }
+
+  .jumbotron img {
+    width: 400px;
+  }
+
+  .jumbotron .text h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .jumbotron .text p {
+    font-size: 20px;
+  }
+}

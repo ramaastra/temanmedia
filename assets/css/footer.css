@@ -1,0 +1,49 @@
+footer *,
+footer .logo span {
+  color: white;
+}
+
+footer .content {
+  background-color: var(--primary);
+  padding: 50px 0;
+  color: white;
+}
+
+footer .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+footer .socmed {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  gap: 35px;
+}
+
+footer a svg {
+  fill: white;
+  width: 35px;
+}
+
+footer nav ul {
+  display: flex;
+  gap: 5px;
+}
+
+.copyright {
+  background-color: var(--dark-blue);
+  text-align: center;
+  padding: 10px;
+}
+
+
+/* Responsive Styles */
+
+@media screen and (min-width: 600px) {
+  footer nav ul {
+    gap: 10px;
+  }
+}

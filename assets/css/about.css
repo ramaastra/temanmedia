@@ -1,0 +1,98 @@
+#about {
+  background-color: var(--grey);
+}
+
+#about .content {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+
+#about .content-2 {
+  margin-top: 30px;
+}
+
+#about .text h3 {
+  color: var(--primary);
+  font-size: 18px;
+}
+
+#about .text h2 {
+  font-size: 27px;
+  margin-top: -7px;
+}
+
+#about .text p {
+  font-size: 16px;
+}
+
+#about .text .logo {
+  font-size: 22px;
+  user-select: all;
+}
+
+#about .text .logo span {
+  font-size: 28px;
+}
+
+#about .content img {
+  display: none;
+}
+
+
+/* Responsive Styles */
+
+@media screen and (min-width: 768px) {
+  #about .text h2 {
+    font-size: 32px;
+    margin-top: -7px;
+  }
+
+  #about .text p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #about .content img {
+    display: block;
+  }
+
+  #about .content img {
+    width: 35%;
+  }
+
+  #about .content-2 {
+    flex-direction: row-reverse;
+    margin-top: 40px;
+  }
+
+  #about .content-2 img {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #about .text h3 {
+    font-size: 18px;
+  }
+
+  #about .text h2 {
+    font-size: 37px;
+    margin-top: -7px;
+  }
+
+  #about .text p {
+    font-size: 18px;
+  }
+
+  #about .text .logo {
+    font-size: 22px;
+  }
+
+  #about .text .logo span {
+    font-size: 28px;
+  }
+}
